@@ -1,75 +1,20 @@
-# Nuxt 3 Minimal Starter
+# shadcn-vue + nuxt3
 
-Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introduction) to learn more.
+- guillaume duhan
+    - [video 1](https://www.youtube.com/watch?v=azs0ov_SbOA&list=PL8HkCX2C5h0VHLeRYfYBmwNAEctlpIp4x)
+    - [code](https://github.com/guillaumeduhan/nuxt3-shadcn)
+- shadcn-vue mail example
+    - [demo](https://www.shadcn-vue.com/examples/mail.html)
+    - [code](https://github.com/radix-vue/shadcn-vue/tree/dev/apps/www/src/examples/mail)
 
-## Setup
+added shadcn-vue mail example to guillaume app
 
-Make sure to install the dependencies:
-
-```bash
-# npm
-npm install
-
-# pnpm
-pnpm install
-
-# yarn
-yarn install
-
-# bun
-bun install
 ```
+cp -a /code/shadcn-vue/shadcn-vue/apps/www/src/examples/mail ./pages
+cp -a /code/shadcn-vue/shadcn-vue/apps/www/src/lib/registry/ ./lib
+cp -a /code/shadcn-vue/shadcn-vue/apps/www/src/lib/utils.ts ./lib
+cp -a /code/shadcn-vue/shadcn-vue/apps/www/src/public/examples/ ./public/
 
-## Development Server
-
-Start the development server on `http://localhost:3000`:
-
-```bash
-# npm
-npm run dev
-
-# pnpm
-pnpm run dev
-
-# yarn
-yarn dev
-
-# bun
-bun run dev
+yarn dev &
+xdg-open http://localhost:3000/mail
 ```
-
-## Production
-
-Build the application for production:
-
-```bash
-# npm
-npm run build
-
-# pnpm
-pnpm run build
-
-# yarn
-yarn build
-
-# bun
-bun run build
-```
-
-Locally preview production build:
-
-```bash
-# npm
-npm run preview
-
-# pnpm
-pnpm run preview
-
-# yarn
-yarn preview
-
-# bun
-bun run preview
-```
-
-Check out the [deployment documentation](https://nuxt.com/docs/getting-started/deployment) for more information.
